@@ -27,3 +27,10 @@ def get_pass(docker) -> dict:
             return passwords[docker]
       else:
             return None
+      
+add_pass("qbitt","ddadmin","oPrefwdf")
+add_pass("redis","ddadmin","oPrefwdf432412")
+add_pass("grafana","ddadmin","oPr23123efwdf")
+add_pass("plex","dragos1900","o312Prefwdf")
+add_pass("influxdb","ddadmin","oPrefwfsad3412df")
+
