@@ -8,7 +8,9 @@ def load_pass ():
     try:
         with open(PASSWORD_FILE, "r") as file:
             return json.load(file)
-    except FileNotFoundError:
+    except FileNotFoundError as fnf:
+        print (fnf)
+        print ("#### >>> Creating a new empty passwords file!")
         return{}
 
 def save_pass(passwords) -> None:
